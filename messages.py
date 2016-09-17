@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 def send_messages(username,password,url,content):
-    driver = webdriver.Firefox()
+    driver = webdriver.PhantomJS()
     driver.get("http://facebook.com")
     driver.find_element_by_name('email').send_keys(username)
     driver.find_element_by_name('pass').send_keys(password)
